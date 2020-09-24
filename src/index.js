@@ -1,6 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
 // importing components
-import MyInfo from "./components/MyInfo"
+//import App from "./components/App"
+import ToDoApp from "./components/TODO-list-app/ToDoApp"
 
-ReactDOM.render(<MyInfo/>, document.getElementById("root"))
+ReactDOM.render(
+  <div>
+    <ToDoApp />
+  </div>,
+  document.getElementById("root")
+);
