@@ -7,12 +7,20 @@ import MyFooter from "./MyFooter";
 // inline js
 var date = new Date();
 let greeting;
+
+const styles = {
+  fontSize: 32, // giving inline style
+  backgroundColor: "#AFFF33"
+}
 if (date.getHours() < 12) {
-  greeting = "morning!";
+  greeting = "morning!"
+  styles.color = "#005AEE"
 } else if (date.getHours() < 20) {
-  greeting = "evening!";
+  greeting = "evening!"
+  styles.color = "#EE4500"
 } else {
-  greeting = "night!";
+  greeting = "night!"
+  styles.color = "#8200EE"
 }
 
 function App() {
@@ -21,7 +29,7 @@ function App() {
       <MyNavBar />
       <MainContent />
       <MyFooter />
-      <p>Here is my greeting: {"Good" + " " + greeting}</p>{" "}
+      <p style={styles}>Here is my greeting: {"Good" + " " + greeting}</p>{" "}
       {/* This is inline JS*/}
     </div>
   );
