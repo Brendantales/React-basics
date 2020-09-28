@@ -1,0 +1,11 @@
+.jokeQStyle {
+    background-color: greenyellow;
+    font-style: italic;
+    font-size: medium;
+}
+
+.jokePStyle {
+    background-color: cyan;
+    font-style: oblique;
+    font-size: medium;
+}
